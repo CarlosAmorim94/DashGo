@@ -6,7 +6,7 @@ export default function Pagination() {
   return (
     <Stack
       spacing="6"
-      direction="row"
+      direction={["column", "row"]}
       mt="8"
       justify="space-between"
       align="center"
@@ -19,6 +19,8 @@ export default function Pagination() {
         <PaginationItem number={2} />
         <PaginationItem number={3} />
         <PaginationItem number={4} />
+        <PaginationItem number={5} />
+        <PaginationItem number={6} />
       </Stack>
     </Stack>
   );
