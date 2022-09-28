@@ -10,7 +10,7 @@ interface InputProps extends ChakraInputProps {
   label?: string;
 }
 
-//...rest coleta todas as outras props adicionadas no componente , pois o type não será fixo, devemos tipar com extends
+//...rest coleta todas as outras props adicionadas no componente , como o type não será fixo, devemos tipar com extends
 export default function Input({ name, label, ...rest }: InputProps) {
   return (
     <FormControl>
