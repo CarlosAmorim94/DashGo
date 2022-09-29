@@ -32,8 +32,8 @@ export default function UserList() {
       <Header />
       <Flex w="100%" maxWidth={1480} mx="auto" my="6" px="6">
         <Sidebar />
-        <Box flex="1" borderRadius={8} bg="gray.800" p="8">
-          <Flex mb="8" justify="space-between" align="center">
+        <Box flex="1" borderRadius={8} bg="gray.800" p={["4", "4", "6"]}>
+          <Flex marginBottom="8" justify="space-between" align="center">
             <Heading size="lg" fontWeight="normal">
               Usuários
             </Heading>
@@ -52,17 +52,17 @@ export default function UserList() {
           <Table colorScheme="whiteAlpha">
             <Thead>
               <Tr>
-                <Th px={["4", "6"]} color="gray.300" width="8">
+                <Th px={["4", "4", "6"]} color="gray.300" width="8">
                   <Checkbox colorScheme="pink" />
                 </Th>
                 <Th>Usuário</Th>
                 {isWideVersion && <Th>Data de cadastro</Th>}
-                <Th w="8"></Th>
+                <Th width="8"></Th>
               </Tr>
             </Thead>
             <Tbody>
               <Tr>
-                <Td px={["4", "6"]}>
+                <Td px={["4", "4", "6"]}>
                   <Checkbox colorScheme="pink" />
                 </Td>
                 <Td>
