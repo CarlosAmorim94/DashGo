@@ -29,7 +29,7 @@ export const makeServer = () => {
     },
 
     seeds(server) {
-      server.createList("user", 200);
+      server.createList("user", 10);
     },
 
     routes() {
@@ -37,6 +37,7 @@ export const makeServer = () => {
       this.timing = 750;
 
       this.get("/users");
+
       this.post("/users");
 
       this.namespace = "";
